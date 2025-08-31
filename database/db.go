@@ -6,11 +6,7 @@ import (
 	"path"
 )
 
-type Database struct{
-	path string
-}
-
-func NewDatabase() (*Database, error){
+func Init() (*Database, error){
 	dirname, err := os.Getwd()
 	if err != nil{
 		fmt.Print(err)
@@ -26,5 +22,5 @@ func NewDatabase() (*Database, error){
 	}
 	defer file.Close()
 
-	return &Database{path: databasePath}, nil
+	return &Database{Path: databasePath}, nil
 }

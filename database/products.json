@@ -1,0 +1,9 @@
+[
+    {
+        "id": 0,
+        "desc": "Teste",
+        "price": 1.00,
+        "in_invetory": 1,
+        "brand": "unknown"
+    }
+]
